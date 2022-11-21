@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #121528;  */
+}
+
+body {
+    background-color: #0a192f;
+    color: #ccd6f6;
+}
+
+/* Utility classes starts */
+.flex {
+    display: flex;
+}
+
+
+/* Utility classes ends  */
+
+/* Header section starts */
+.header {
+    /* background-color: yellow; */
+    
+}
+
+.header-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 1.5%;
+}
+
+.nav-logo img{
+    display: block;
+    margin: 2% auto;
+}
+
+.nav-links-div {
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 20px;
+}
+
+.nav-links a {
+    font-family: 'Source Code Pro', monospace;
+    color: #ccd6f6;
+    text-decoration: none;
+}
+/* Header section ends */
+.hero-section {
+}
+
+
+/* Hero Section starts */
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto 0 155px;
+}
+
+.margin-utility {
+    margin: 2% 0;
+}
+
+.hero-heading1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: #64ffda;
+}
+
+.hero-heading3 {
+    color: #ccd6f6b0;
+}
+.hero-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.margin-utility button {
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    border: 2px solid #64ffda;
+    color: #64ffda;
+}
+
+.margin-utility button:hover {
+    background-color: #64ffdb18;
+    transition: 0.2s ease-in-out;
+}
+/* Hero Section ends */
+
+/* Educational Section starts */
+/* Educational Section ends */
+
+/* Skills Section starts */
+/* Skills Section ends */
+
+/* Footer Section starts */
+/* Footer Section ends */
