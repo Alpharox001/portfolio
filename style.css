@@ -102,24 +102,27 @@ body {
     margin-top: 30px;
 }
 
-.resume-button button {
+.resume-button a {
+    display: block;
+    color: #64ffda;
     font-family: 'Source Code Pro', monospace;
+    background-color: transparent;
+    outline: 1px solid #64ffda;
     cursor: pointer;
     border-radius: 5px;
     height: 50px;
     width: 180px;
-    background-color: transparent;
-    border: 1px solid #64ffda;
-    color: #64ffda;
     font-size: 15px;
-
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
 }
 
 .social-buttons {
     margin-left: 5px;
 }
 
-.resume-button button:hover, 
+.resume-button a:hover, 
 .social-buttons button:hover {
     background-color: #64ffdb18;
     transition: 0.2s ease-in-out;
