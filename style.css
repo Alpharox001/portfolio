@@ -8,7 +8,7 @@
 
 body {
     background-color: #0a192f;
-    color: #ccd6f6;
+    color: #ccd6f6b0;
 }
 
 /* Utility classes starts */
@@ -73,39 +73,105 @@ body {
     margin: 2% 0;
 }
 
+.hero-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #ccd6f6;
+}
+
 .hero-heading1 {
     font-family: 'Source Code Pro', monospace;
     font-weight: 500;
     color: #64ffda;
+    margin-bottom: 2%;
 }
 
 .hero-heading3 {
     color: #ccd6f6b0;
 }
-.hero-heading {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 3.5rem;
+
+.hero-heading4 {
+    color: #ccd6f6;
+    width: 60%;
 }
 
-.margin-utility button {
+.hero-section-buttons {
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.resume-button button {
     font-family: 'Source Code Pro', monospace;
     cursor: pointer;
     border-radius: 5px;
     height: 50px;
     width: 180px;
     background-color: transparent;
-    border: 2px solid #64ffda;
+    border: 1px solid #64ffda;
     color: #64ffda;
+    font-size: 15px;
+
 }
 
-.margin-utility button:hover {
+.social-buttons {
+    margin-left: 5px;
+}
+
+.resume-button button:hover, 
+.social-buttons button:hover {
     background-color: #64ffdb18;
     transition: 0.2s ease-in-out;
+}
+.social-buttons button {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 60px;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    font-size: 15px;
+    color: #64ffda;
+    margin-left: 10px;
+    font-size: 25px;
 }
 /* Hero Section ends */
 
 /* Educational Section starts */
+.education-section {
+    margin: 40px 155px;
+}
+
+.education-section-title {
+   margin-top: 50px;
+   color: #ccd6f6b0;
+}
+
+.education-section-title h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.card-content {
+    margin: 50px auto   ;
+}
+
+.section-numbering {
+    color: #64ffda;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.card1, .card2 {
+    margin-left: 105px;
+}
+
+.card-content h3, 
+.card-content p, 
+.card-content h4 {
+    margin: 1% 0;
+}
 /* Educational Section ends */
 
 /* Skills Section starts */
