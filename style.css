@@ -92,7 +92,7 @@ body {
 }
 
 .hero-heading4 {
-    color: #ccd6f6;
+    color: #ccd6f6b0;
     width: 60%;
 }
 
@@ -155,9 +155,14 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
     font-size: 3.5rem;
+    color: #ccd6f6;
 }
 .card-content {
     margin: 50px auto   ;
+}
+
+.fa-arrow-right {
+    color: #64ffda;
 }
 
 .section-numbering {
@@ -168,13 +173,22 @@ body {
 
 .card1, .card2 {
     margin-left: 105px;
+    outline: 1px solid #64ffda;
+    border-radius: 5px;
+    width: 80%;
 }
 
 .card-content h3, 
 .card-content p, 
 .card-content h4 {
-    margin: 1% 0;
+    margin: 1% 1%;
 }
+ 
+.card-content p, 
+.card-content h4 {
+    margin-left: 3.5%;
+}
+
 /* Educational Section ends */
 
 /* Skills Section starts */
