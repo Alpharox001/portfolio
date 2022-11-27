@@ -192,6 +192,53 @@ body {
 /* Educational Section ends */
 
 /* Skills Section starts */
+.skills-section {
+    width: 77%;
+    margin: 0 auto 0 auto;
+}
+
+.skills-title {
+    width: fit-content;
+    margin: auto 0;
+}
+
+.skills-title h2 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #ccd6f6;
+}
+
+.skills {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    line-height: auto;
+    margin: 5% 5%;
+    width: 90.5%;
+    grid-template-rows: 150px;
+}
+
+.skill {
+    border-radius: 5px;
+    height: 80px;
+    width: 100px;
+    line-height: normal;
+    margin: 0 auto;
+    border: 1px solid #64ffda;
+}
+
+.skill:hover {
+    background-color: #64ffdb18;
+    transition: 0.2s ease-in-out;
+}
+
+.skill-img {
+    line-height: 3.4rem;
+    color: #64ffda;
+    scale: 1.8;
+}
 /* Skills Section ends */
 
 /* Footer Section starts */
