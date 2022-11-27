@@ -98,7 +98,7 @@ body {
 
 .hero-section-buttons {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     margin-top: 30px;
 }
 
@@ -152,7 +152,6 @@ body {
 }
 
 .education-section-title h1 {
-    font-family: 'Source Code Pro', monospace;
     font-weight: 700;
     font-size: 3.5rem;
     color: #ccd6f6;
@@ -203,7 +202,6 @@ body {
 }
 
 .skills-title h2 {
-    font-family: 'Source Code Pro', monospace;
     font-weight: 700;
     font-size: 3.5rem;
     color: #ccd6f6;
@@ -227,11 +225,21 @@ body {
     line-height: normal;
     margin: 0 auto;
     border: 1px solid #64ffda;
+    transition: 2s;
+}
+
+.skill-img i {
+    
 }
 
 .skill:hover {
     background-color: #64ffdb18;
     transition: 0.2s ease-in-out;
+}
+
+.skill:hover > .skill-img i{
+    transition: 0.5s ease;
+    
 }
 
 .skill-img {
