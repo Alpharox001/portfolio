@@ -56,12 +56,6 @@ body {
     color: #ccd6f6;
     text-decoration: none;
 }
-
-.nav-links a:hover {
-    color: #64ffda;
-    transition: .2s ease-in;
-}
-
 /* Header section ends */
 .hero-section {
 }
@@ -244,8 +238,8 @@ body {
 }
 
 .skill:hover > .skill-img i{
-    transition: 0.5s ease;
-    
+    transition: 0.2s ease-in-out;
+
 }
 
 .skill-img {
