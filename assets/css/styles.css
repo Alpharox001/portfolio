@@ -1,0 +1,503 @@
+:root {
+    --main-accent-color: #64ffda;
+    --main-heading-color: #ccd6f6;
+    --secondary-heading-color: #ccd6f6b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0a192f;
+    color: var(--secondary-heading-color);
+    
+}
+
+
+/* ---------Utilities-------------- */
+
+.underline-animation {
+    position: relative;
+    color: var(--main-accent-color);
+    text-decoration: none;
+}
+
+.underline-animation::after {
+    position: absolute;
+    content: " ";
+    width: 0;
+    background-color: var(--main-accent-color);
+    bottom: 3px;
+    left: 0;
+    height: 0.009rem;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+}
+/* ---------Utilities-------------- */
+
+/* ------------------Header------------------ */
+
+.header {
+    height: 20vh;
+    position: relative;
+}
+
+.header-content {
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+
+.site-logo {
+    width: 50px;
+}
+
+.nav-links-div {
+    width: 40%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    width: max-content;
+    margin: auto;
+}
+
+.nav-links li a {
+    font-family: 'Source Code Pro', monospace;
+    color: #ccd6f6;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: var(--main-accent-color);
+}
+
+.nav-links li a:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: var(--main-accent-color);
+    left: 0;
+    bottom: -3px;
+    transition: 200ms;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+/* ----------Hero section------------*/
+
+.hero-section-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.hero-heading1 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: var(--main-accent-color);
+    margin: 40px 0px 0px 4px;
+}
+
+.hero-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #ccd6f6;
+}
+
+.hero-heading3 {
+    color: #ccd6f6b0;
+    margin-top: -15px;
+}
+
+.hero-heading4 {
+    color: #ccd6f6b0;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.hero-section-buttons {
+    display: flex;
+    margin-top: 45px;
+}
+
+.resume-button a {
+    display: block;
+    color: var(--main-accent-color);
+    font-family: 'Source Code Pro', monospace;
+    background-color: transparent;
+    outline: 1px solid var(--main-accent-color);
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.social-buttons {
+    margin-left: 5px;
+}
+
+.social-buttons button {
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 60px;
+    background-color: transparent;
+    border: 1px solid var(--main-accent-color);
+    font-size: 15px;
+    color: var(--main-accent-color);
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.resume-button a:hover, 
+.social-buttons button:hover {
+    background-color: #64ffdb18;
+    transition: 0.2s ease-in-out;
+}
+
+/* ----------Hero section------------*/
+
+/* -------------About me section---------- */
+
+.about-me-container {
+    width: 50%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.about-me-title {
+    margin-bottom: 7.5%;
+    position: relative;
+    color: var(--main-heading-color);
+}
+
+.about-me-title::before {
+    content: "01.";
+    color: var(--main-accent-color);
+    font-family: 'Source Code Pro', monospace;
+    margin-right: 10px;
+}
+
+.about-me-title::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 1px;
+    bottom: 50%;
+    right: 15px;
+    background-color: #ccd6f65e;
+}
+
+.about-me-info {
+    margin-bottom: 4%;
+}
+/* -------------About me section---------- */
+
+
+/* ---------experience section starts------ */
+
+.exp-container {
+    margin-left: 10%;
+    width: 65%;
+    margin-bottom: 10%;
+}
+
+.exp-title{
+    margin-bottom: 7.5%;
+    position: relative;
+    color: var(--main-heading-color);
+}
+
+.exp-title::before {
+    content: "02.";
+    color: var(--main-accent-color);
+    font-family: 'Source Code Pro', monospace;
+    margin-right: 10px;
+}
+
+.exp-title::after {
+    position: absolute;
+    content: "";
+    width: 72%;
+    height: 1px;
+    bottom: 50%;
+    right: 15px;
+    background-color: #ccd6f65e;
+}
+
+.exp-content {
+    display: flex;
+    width: 80%;
+}
+
+.exp-company {
+    max-height: 300px;
+    width: 15%;
+    margin-right: 10px;
+    border-left: 1px solid var(--secondary-heading-color);
+}
+
+.exp-company li {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.exp-company li:hover {
+    background-color: #64ffdb18;
+}
+
+.exp-details {
+    min-height: 300px;
+    width: 70%;
+}
+
+.exp-details-hero {
+    margin-bottom: 20px
+}
+
+.exp-company-duties li {
+    margin-bottom: 4%;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.fi {
+    margin-right: 10px;
+    color: var(--main-accent-color);
+}
+
+/* ------------experience section ends-------- */
+
+
+/* -- Skills Section starts -- */
+
+.skills-section-container {
+    margin-left: 10%;
+    width: 65%;
+    margin-bottom: 10%;
+}
+
+.skills-title {
+    margin-bottom: 7.5%;
+    position: relative;
+    color: var(--main-heading-color);
+}
+
+
+.skills-title::before {
+    content: "03.";
+    color: var(--main-accent-color);
+    font-family: 'Source Code Pro', monospace;
+    margin-right: 10px;
+}
+
+.skills-title::after {
+    position: absolute;
+    content: "";
+    width: 65%;
+    height: 1px;
+    bottom: 50%;
+    right: 15px;
+    background-color: #ccd6f65e;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5%;
+    align-items: center;
+}
+
+.skill {
+    width: 80px;
+    height: 80px;
+    outline: 1px solid var(--main-accent-color);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill:hover {
+    background-color: #64ffdb18;
+    transition: 0.2s ease-in-out;
+}
+
+.skill-name {
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.8rem;
+}
+.skill-img img {
+    width: 40px;
+    height: 40px;
+}
+
+/* -- Skills Section ends -- */
+
+
+/* ------education section--------- */
+.education-section-container {
+    width: 65%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.education-section-title {
+    position: relative;
+    margin-bottom: 7.5%;
+    color: var(--main-heading-color);
+}
+
+.education-section-title::before {
+    content: "04.";
+    font-family: 'Source Code Pro', monospace;
+    color: var(--main-accent-color);
+    margin-right: 10px;
+}
+
+.education-section-title::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 45%;
+    background-color: #ccd6f65e;
+    bottom: 50%;
+    right: 5px;
+}
+
+.education-section-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8%;
+    position: relative;
+}
+
+.education-section-card {
+    min-width: 40%;
+    height: 300px;
+    outline: 1px solid var(--main-accent-color);
+    border-radius: 5px;
+}
+
+.education-section-card-content {
+    padding: 15px
+}
+
+.edu-degree {
+    position: absolute;
+    top: 5%;
+    width: 30%;
+}
+
+.edu-institute {
+    position: absolute;
+    top: 40%;
+    width: 35%;
+}
+
+.edu-duration {
+    position: absolute;
+    bottom: 5%;
+}
+/* ------education section--------- */
+
+/* -----Contact Section Starts----- */
+
+.contact-section-container {
+    margin-left: 10%;
+    width: 65%;
+    margin-bottom: 20%;
+}
+
+.contact-section-heading {
+    position: relative;
+    margin-bottom: 7.5%;
+    color: var(--main-heading-color);
+}
+
+.contact-section-heading::before {
+    content: "05.";
+    color: var(--main-accent-color);
+    margin-right: 10px;
+    font-family: 'Source Code Pro', Monospace;
+}
+
+.contact-me-message {
+    width: 80%;
+    margin-bottom: 7.5%;
+}
+
+.contact-section-heading::after {
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: 50%;
+    width: 68%;
+    right: 5px;
+    background-color: #ccd6f65e;
+}
+
+.contact-section-buttons {
+    display: flex;
+}
+
+.contact-section-email-button {
+    display: block;
+    color: var(--main-accent-color);
+    font-family: 'Source Code Pro', monospace;
+    background-color: transparent;
+    outline: 1px solid var(--main-accent-color);
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    width: 130px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+}
+
+.contact-section-email-button:hover {
+    background-color: #64ffdb18;
+    transition: 0.2s ease-in-out;
+}
+/* ------Contact Section Ends------- */
