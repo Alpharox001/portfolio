@@ -2,6 +2,10 @@
     --main-accent-color: #64ffda;
     --main-heading-color: #ccd6f6;
     --secondary-heading-color: #ccd6f6b0;
+
+    --dark: #1c1c1c;
+    --light: #c4c4c4;
+    --teal: #008080;
 }
 
 * {
@@ -21,6 +25,36 @@ body {
     
 }
 
+/* hero section typing animation start  */
+
+
+.typed-text {
+  color: var(--main-accent-color);
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  margin-left: 4px;
+  background: var(--teal);
+}
+
+.cursor.blink {
+  animation: blink 0.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    background: var(--teal);
+  }
+  40%, 50% {
+    background: transparent;
+  }
+}
+
+
+
+/* hero section typing animation ends */
 
 /* ---------Utilities-------------- */
 
@@ -87,6 +121,7 @@ body {
     color: #ccd6f6;
     text-decoration: none;
     position: relative;
+    transition: 200ms ease-in;
 }
 
 .nav-links li a:hover {
@@ -160,6 +195,7 @@ body {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
+    transition: 0.2s ease-in;
 }
 
 .social-buttons {
@@ -177,12 +213,12 @@ body {
     color: var(--main-accent-color);
     margin-left: 10px;
     font-size: 25px;
+    transition: 0.2s ease-in;
 }
 
 .resume-button a:hover, 
 .social-buttons button:hover {
     background-color: #64ffdb18;
-    transition: 0.2s ease-in-out;
 }
 
 /* ----------Hero section------------*/
@@ -353,11 +389,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.2s ease-in;
 }
 
 .skill:hover {
     background-color: #64ffdb18;
-    transition: 0.2s ease-in-out;
 }
 
 .skill-name {
@@ -445,7 +481,7 @@ body {
 .contact-section-container {
     margin-left: 10%;
     width: 65%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .contact-section-heading {
@@ -501,3 +537,87 @@ body {
     transition: 0.2s ease-in-out;
 }
 /* ------Contact Section Ends------- */
+
+/* Footer Section Starts  */
+
+.footer {
+    background-color: #091423d4;
+}
+
+.margin-bottom {
+    margin-bottom: 5%;
+}
+
+.footer-container {
+    padding-top: 2%;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.footer-section-headings {
+    color: var(--main-heading-color);
+}
+
+.footer-ty-message-section {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.footer-ty-message {
+    font-family: 'Source code pro', Monospace;
+}
+
+.footer-quick-links-section {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.footer-section-logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.footer-section-links,
+.footer-section-contact-info-links {
+    list-style-type: none;
+}
+
+
+.footer-section-links li a{
+    color: var(--secondary-heading-color);
+    text-decoration: none;
+    transition: 200ms ease-in;
+    font-family: 'Source code pro', Monospace;
+}
+
+.footer-section-links li a:hover {
+    color: var(--main-accent-color);
+}
+
+.footer-contact-info-section {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.footer-section-contact-info-links li a{
+    color: var(--secondary-heading-color);
+    text-decoration: none;
+    font-family: 'Source code pro', Monospace;
+}
+
+.fi-rr-angle-small-right {
+    margin-right: 5px;
+}
+
+.footer-divider {
+    border-bottom: 1mm ridge var(--secondary-heading-color);
+    width: 100%;
+}
+
+.footer-final-message {
+    text-align: center;
+    padding: 1% 0 1%;
+    background-color: #091423d4;
+}
+/* Footer Section ends  */
