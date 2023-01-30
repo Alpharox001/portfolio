@@ -25,8 +25,7 @@ body {
     
 }
 
-/* hero section typing animation start  */
-
+/* hero section typing animation start */
 
 .typed-text {
   color: var(--main-accent-color);
@@ -52,11 +51,9 @@ body {
   }
 }
 
+/* hero section typing animation Ends */
 
-
-/* hero section typing animation ends */
-
-/* ---------Utilities-------------- */
+/* Utilities starts */
 
 .underline-animation {
     position: relative;
@@ -78,9 +75,11 @@ body {
 .underline-animation:hover::after {
     width: 100%;
 }
-/* ---------Utilities-------------- */
 
-/* ------------------Header------------------ */
+/* Utilities ends */
+
+
+/* Header starts */
 
 .header {
     height: 20vh;
@@ -96,7 +95,6 @@ body {
     top: 20%;
     left: 5%;
 }
-
 
 .site-logo {
     width: 50px;
@@ -143,13 +141,18 @@ body {
     width: 100%;
 }
 
+/* Header section Ends  */
 
-/* ----------Hero section------------*/
+
+/* Hero section Starts*/
+
+.hero-section {
+    height: 100vh;
+}
 
 .hero-section-container {
     width: 80%;
     margin-left: 10%;
-    margin-bottom: 10%;
 }
 
 .hero-heading1 {
@@ -221,9 +224,10 @@ body {
     background-color: #64ffdb18;
 }
 
-/* ----------Hero section------------*/
+/* Hero section Ends */
 
-/* -------------About me section---------- */
+
+/* About me section Starts */
 
 .about-me-container {
     width: 50%;
@@ -257,10 +261,11 @@ body {
 .about-me-info {
     margin-bottom: 4%;
 }
-/* -------------About me section---------- */
+
+/* About me section Ends */
 
 
-/* ---------experience section starts------ */
+/* Experience section starts */
 
 .exp-container {
     margin-left: 10%;
@@ -334,10 +339,10 @@ body {
     color: var(--main-accent-color);
 }
 
-/* ------------experience section ends-------- */
+/* Experience section ends */
 
 
-/* -- Skills Section starts -- */
+/* Skills Section starts */
 
 .skills-section-container {
     margin-left: 10%;
@@ -350,7 +355,6 @@ body {
     position: relative;
     color: var(--main-heading-color);
 }
-
 
 .skills-title::before {
     content: "03.";
@@ -406,10 +410,11 @@ body {
     height: 40px;
 }
 
-/* -- Skills Section ends -- */
+/* Skills Section ends */
 
 
-/* ------education section--------- */
+/* Education section starts */
+
 .education-section-container {
     width: 65%;
     margin-left: 10%;
@@ -444,14 +449,14 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8%;
-    position: relative;
 }
 
 .education-section-card {
-    min-width: 40%;
+    width: 40%;
     height: 300px;
     outline: 1px solid var(--main-accent-color);
     border-radius: 5px;
+    position: relative;
 }
 
 .education-section-card-content {
@@ -461,22 +466,24 @@ body {
 .edu-degree {
     position: absolute;
     top: 5%;
-    width: 30%;
+    width: 90%;
 }
 
 .edu-institute {
     position: absolute;
     top: 40%;
-    width: 35%;
+    width: 90%;
 }
 
 .edu-duration {
     position: absolute;
     bottom: 5%;
 }
-/* ------education section--------- */
 
-/* -----Contact Section Starts----- */
+/* Education section Ends */
+
+
+/* Contact Section Starts */
 
 .contact-section-container {
     margin-left: 10%;
@@ -536,9 +543,10 @@ body {
     background-color: #64ffdb18;
     transition: 0.2s ease-in-out;
 }
-/* ------Contact Section Ends------- */
+/* Contact Section Ends */
 
-/* Footer Section Starts  */
+
+/* Footer Section Starts */
 
 .footer {
     background-color: #091423d4;
@@ -620,4 +628,171 @@ body {
     padding: 1% 0 1%;
     background-color: #091423d4;
 }
+
 /* Footer Section ends  */
+
+
+/* Responsive section starts */
+
+@media only screen and (max-width: 480px) {
+
+    /* remove this asap  */
+
+    .nav-links-div {
+        opacity: 0;
+    }
+    /* remove this asap  */
+
+    .about-me-section,
+    .exp-section,
+    .skills-section,
+    .education-section,
+    .contact-section {
+        margin-bottom: 25%; 
+    }
+
+    .hero-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #ccd6f6;
+    }
+
+    .hero-heading1 {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 500;
+        color: var(--main-accent-color);
+        margin: 40px 0px 10px 0px;
+    }
+
+    .hero-heading3 {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .hero-heading4 {
+        margin-top: 15px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hero-section-buttons {
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .social-buttons {
+        display: flex;
+        margin-left: -10px;
+        margin-top: 20px;
+    }
+
+    .resume-button a {
+        width: 200px;
+    }
+
+    .hero-section-container,
+    .about-me-container,
+    .exp-container,
+    .skills-section-container,
+    .education-section-container,
+    .contact-section-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-me-title,
+    .exp-title,
+    .skills-title,
+    .contact-section-heading {
+        font-size: 20px;
+    }
+
+    .education-section-title {
+        font-size: 18px;
+    }
+
+    .about-me-title::after {
+        width: 40%;
+
+    }
+
+    .exp-title::after {
+        width: 30%;
+    }
+
+    .skills-title::after {
+        width: 15%;
+    }
+
+    .education-section-title::after {
+        width: 5%;
+    }
+
+    .contact-section-heading::after {
+        width: 35%;
+    }
+
+    .exp-content {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .exp-company {
+        margin-bottom: 20px;
+        border: none;
+        width: max-content;
+        background-color: #64ffdb18;
+        padding: 5px;
+    }
+
+    .exp-details {
+        min-height: 300px;    
+        width: 100%;
+    }
+
+    .skills-row {
+        gap: 10%;
+    }
+
+    .education-section-cards {
+        display: block;
+    }
+
+    .education-section-card {
+        width: 100%;
+        gap: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .edu-degree,
+    .edu-institute,
+    .edu-duration {
+        width: 90%;
+    }
+
+    .contact-me-message {
+        width: 100%;
+    }
+
+    .contact-section-buttons .social-buttons {
+        margin: 0;
+    }
+
+    .footer-container {
+        display: block;
+        padding: 25px 0;
+    }
+
+    .footer-ty-message-section,
+    .footer-quick-links-section,
+    .footer-contact-info-section {
+        width: 90%;
+    }
+}
+
+/* Responsive section ends  */
+
+
+     
