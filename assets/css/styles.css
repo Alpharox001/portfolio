@@ -639,7 +639,7 @@ body {
     /* remove this asap  */
 
     .nav-links-div {
-        opacity: 0;
+        display: none;
     }
     /* remove this asap  */
 
