@@ -198,7 +198,7 @@ body {
     text-decoration: none;
     text-align: center;
     line-height: 50px;
-    transition: 0.2s ease-in;
+    transition: 200ms ease-in;
 }
 
 .social-buttons {
@@ -206,17 +206,17 @@ body {
 }
 
 .social-buttons button {
-    cursor: pointer;
-    border-radius: 5px;
-    height: 50px;
     width: 60px;
-    background-color: transparent;
-    border: 1px solid var(--main-accent-color);
+    height: 50px;
     font-size: 15px;
-    color: var(--main-accent-color);
-    margin-left: 10px;
     font-size: 25px;
-    transition: 0.2s ease-in;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: 200ms ease-in;
+    background-color: transparent;
+    color: var(--main-accent-color);
+    border: 1px solid var(--main-accent-color);
 }
 
 .resume-button a:hover, 
@@ -289,7 +289,7 @@ body {
 .exp-title::after {
     position: absolute;
     content: "";
-    width: 72%;
+    width: 75%;
     height: 1px;
     bottom: 50%;
     right: 15px;
@@ -366,7 +366,7 @@ body {
 .skills-title::after {
     position: absolute;
     content: "";
-    width: 65%;
+    width: 68%;
     height: 1px;
     bottom: 50%;
     right: 15px;
@@ -438,7 +438,7 @@ body {
     content: "";
     position: absolute;
     height: 1px;
-    width: 45%;
+    width: 60%;
     background-color: #ccd6f65e;
     bottom: 50%;
     right: 5px;
@@ -514,7 +514,7 @@ body {
     height: 1px;
     position: absolute;
     bottom: 50%;
-    width: 68%;
+    width: 75%;
     right: 5px;
     background-color: #ccd6f65e;
 }
@@ -537,11 +537,11 @@ body {
     text-align: center;
     line-height: 50px;
     border: none;
+    transition: 200ms ease-in-out;
 }
 
 .contact-section-email-button:hover {
     background-color: #64ffdb18;
-    transition: 0.2s ease-in-out;
 }
 /* Contact Section Ends */
 
@@ -639,7 +639,7 @@ body {
     /* remove this asap  */
 
     .nav-links-div {
-        display: none;
+        opacity: 0;
     }
     /* remove this asap  */
 
